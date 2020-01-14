@@ -1,8 +1,8 @@
 const mysql = require("mysql");
 const conn = {
   host: "localhost",
-  user: "micro",
-  password: "service",
+  user: "root",
+  password: "didwjdgns1",
   database: "monolithic"
 };
 
@@ -82,7 +82,7 @@ function inquiry(method, pathname, params, cb) {
           response.errorcode = 1;
           response.errormessage = error ? error : "invalid password";
         } else {
-          response.userid = result[0].id;
+          response.userid = results[0].id;
         }
         cb(response);
       }

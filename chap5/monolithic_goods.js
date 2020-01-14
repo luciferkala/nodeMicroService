@@ -1,8 +1,8 @@
 const mysql = require("mysql");
 const conn = {
   host: "localhost",
-  user: "micro",
-  password: "service",
+  user: "root",
+  password: "didwjdgns1",
   database: "monolithic"
 };
 

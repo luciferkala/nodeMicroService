@@ -44,7 +44,7 @@ function onRequest(res, method, pathname, params) {
       goods.onRequest(res, method, pathname, params, response);
       break;
     case "/purchases":
-      goods.onRequest(res, method, pathname, params, response);
+      purchases.onRequest(res, method, pathname, params, response);
       break;
     default:
       res.writeHead(404);
