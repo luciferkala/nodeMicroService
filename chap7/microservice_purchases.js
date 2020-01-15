@@ -29,4 +29,4 @@ class purchases extends require("../chap6/server") {
   }
 }
 
-new purcahses();
+new purchases();

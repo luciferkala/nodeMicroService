@@ -47,7 +47,7 @@ class distributor extends require("./server") {
     }
 
     if (socket) {
-      this.params.push(map[n].info);
+      this.write(socket, packet);
     } else {
       for (var n in map) {
         this.write(map[n].socket, packet);
